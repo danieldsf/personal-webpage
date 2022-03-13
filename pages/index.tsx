@@ -51,7 +51,7 @@ const Home: NextPage = () => {
                             { 
                                 links.map((currentLink, index) => {
                                     return (
-                                        <a key={index} href={currentLink.url} target="_blank" className="botao">
+                                        <a key={index} href={currentLink.url} rel="noreferrer" target="_blank" className="botao">
                                             <p>{currentLink.label}</p>
                                         </a>
                                     )
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
                                 { 
                                     socials.map((socialMedia, index) => {
                                         return (
-                                            <li key={index}><a href={socialMedia.url} target="_blank"><i className={socialMedia.icon} style={{ fontSize: '2rem' }} title={socialMedia.label}></i></a></li>
+                                            <li key={index}><a href={socialMedia.url} rel="noreferrer" target="_blank"><i className={socialMedia.icon} style={{ fontSize: '2rem' }} title={socialMedia.label}></i></a></li>
                                         )
                                     }) 
                                 }
@@ -87,9 +87,9 @@ const Home: NextPage = () => {
                         <div className="col">
                             {/* Pode alterar se quiser, mas ficarei muito grato caso possa deixar um link para o meu site :) */}
                             <p>
-                                I would like to thank <a href="https://ehayashi.com" target="_blank" title="EHayashi">EHayashi</a> for the nice template!
+                                I would like to thank <a href="https://ehayashi.com" rel="noreferrer" target="_blank" title="EHayashi">EHayashi</a> for the nice template!
                                 <br />
-                                Made with <a href="https://getbootstrap.com/" target="_blank" title="Bootstrap">Bootstrap 5</a>
+                                Made with <a href="https://getbootstrap.com/" rel="noreferrer" target="_blank" title="Bootstrap">Bootstrap 5</a>
                             </p>
                             <p>&nbsp;</p>
                             <p>
