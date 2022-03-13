@@ -1,5 +1,7 @@
 import profile from './../public/profile.jpg'
 
+export const pageURL = "https://danieldsf.vercel.app/"
+
 export const profilePicture = profile
 
 export const userConfig = {
